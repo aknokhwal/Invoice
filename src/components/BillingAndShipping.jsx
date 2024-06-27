@@ -207,13 +207,7 @@ const BillingAndShipping = () => {
           <div className="text-red-500">{formik.errors.placeOfDelivery}</div>
         )}
       </div>
-      <div className="flex justify-between mt-5 ">
-        <button 
-          type="button"
-          className="w-[200px] bg-blue-500 text-white px-4 py-2 rounded-md"
-          onClick={() => navigate('/seller-details')}>
-          Previous
-        </button>
+      <div className="flex justify-center ">
         <button 
           type="submit"
           className="w-[200px] bg-blue-500 text-white px-4 py-2 rounded-md">
