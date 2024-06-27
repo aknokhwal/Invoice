@@ -174,12 +174,7 @@ const SellerDetails = () => {
           ) : null}
         </div>
 
-        <div className="flex justify-between">
-          <button
-            className="w-[200px] bg-blue-500 text-white px-4 py-2 rounded-md"
-            onClick={() => navigate('/')}>
-            Previous
-          </button>
+        <div className="flex justify-center">
           <button
             className="w-[200px] bg-blue-500 text-white px-4 py-2 rounded-md"
             type="submit"
