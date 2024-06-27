@@ -61,7 +61,16 @@ vite.config.js
 ### Form Handling and Validation
 - Employs Formik for form state management and event handling.
 - Integrates Yup for schema-based form validation.
-
+- Implements specific validation rules for critical fields:
+  - Pincode: Must be exactly 6 digits.
+  - PAN Card: Follows the format of 5 alphabets, followed by 4 numbers, and ending with 1 alphabet (e.g., ABCDE1234F).
+  - GST Number: Validates according to the standard GST number format, which is 15 characters long and follows this structure:
+    - First 2 digits: State code
+    - Next 10 characters: PAN number
+    - 13th digit: Entity number
+    - 14th digit: Z (by default)
+    - 15th digit: Check sum digit
+      
 ### Key Features
 - Multi-step form process for structured data entry.
 - Dynamic tax calculations based on supply and delivery locations.
